@@ -83,6 +83,14 @@ h4 {
   display: flex;
   justify-content: space-between;
 }
+.header .container .logo {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
 .header .container .logo svg {
   width: 140px;
   height: 12px;
