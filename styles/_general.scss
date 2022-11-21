@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  font-weight: 500;
+  color: #565656;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48px;
+}
+h2 {
+  font-family: "Red Hat Display", sans-serif;
+  margin-bottom: 50px;
+}
+.blog_title {
+  font-size: 48px;
+  font-weight: 400;
+}
+h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 23px;
+}
+h4 {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.button {
+  color: #666666;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 90px 0;
+}

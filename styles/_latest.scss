@@ -1,0 +1,83 @@
+.container {
+  .title_row {
+    display: flex;
+    justify-content: space-between;
+    .title_row__link {
+      a {
+        color: #7b7b7b;
+        .arrow {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.slider {
+  display: flex;
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    margin-right: 30px;
+    &__image {
+      width: 370px;
+      height: 260px;
+      background-image: url(../img/latest/lamp.png);
+    }
+    .second_slide {
+      background-image: url(../img/latest/arrow.png);
+    }
+    .third_slide {
+      background-image: url(../img/latest/roof.png);
+    }
+    .text {
+      .sub_text {
+        margin: 25px 0;
+      }
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+.slider__item:last-child {
+  margin-right: 0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .slider {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container .blog_content__box {
+    flex-wrap: wrap;
+  }
+
+  .slider {
+    &__item {
+      &__image {
+        width: 300px;
+        height: 210px;
+        background-image: url(../img/mobile/lamp.png);
+      }
+      .second_slide {
+        background-image: url(../img/mobile/arrow.png);
+      }
+      .third_slide {
+        background-image: url(../img/mobile/roof.png);
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+// nav {
+//   display: flex;
+//   align-items: flex-start;
+// }
+
+// @media (min-width: 700px) {
+//   .header .container .box_menu .header__menu {
+//     margin-right: 0px;
+//   }
+//   nav {
+//     flex-direction: column;
+//   }
+//   .box_menu {
+//     display: flex;
+//     // flex-direction: column;
+//   }
+//   #menu-flag + button {
+//     display: none;
+//   }
+
+//   nav ul {
+//     display: block;
+//   }
+//   nav ul li:not(:last-child) {
+//     margin-right: 10px;
+//   }
+
+//   .none {
+//     display: none;
+//   }
+// }
+
+// @media (max-width: 699px) {
+//   #menu-flag:not(:checked) ~ nav {
+//     display: none;
+//   }
+//   #menu-flag:checked + button {
+//     display: none;
+//   }
+// }
+.burger {
+  background-image: url(../img/hamburger.png);
+  width: 35px;
+  height: 22px;
+}
+
+#burger,
+[for="burger"] {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 80%;
+  }
+  [for="burger"] {
+    display: block;
+    position: fixed;
+    width: 30px;
+    text-align: center;
+    right: 20px;
+    top: 45px;
+    z-index: 2;
+  }
+  nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 30px;
+    background: green;
+    width: 100%;
+    opacity: 0.7;
+    // height: 100%;
+  }
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    margin: 10px 0 !important;
+  }
+
+  #burger:checked + label + nav {
+    display: block;
+  }
+}
