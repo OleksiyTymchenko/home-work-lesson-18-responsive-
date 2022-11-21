@@ -5,8 +5,9 @@
     justify-content: space-between;
     .logo {
       animation-duration: 1.5s;
-      animation-iteration-count: infinite;
+
       animation-timing-function: linear;
+      animation-iteration-count: infinite;
       svg {
         width: 140px;
         height: 12px;
