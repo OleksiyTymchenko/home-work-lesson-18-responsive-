@@ -1,0 +1,60 @@
+.popular {
+  .slider-2 {
+    .slider__item {
+      max-width: 570px;
+      width: 100%;
+      .slider__item__image {
+        max-width: 570px;
+        width: 100%;
+        background-image: url(../img/popular/egg.png);
+      }
+      .second_slide {
+        background-image: url(../img/popular/arrow.png);
+      }
+    }
+  }
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  margin: 50px 0 90px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #565656;
+  padding: 10px 45px;
+  cursor: pointer;
+}
+
+.button:hover {
+  margin: 50px 0 90px;
+  font-size: 16px;
+  color: #565656;
+  background-color: #fff;
+  padding: 10px 45px;
+  cursor: pointer;
+}
+
+.text_information {
+  display: flex;
+  justify-content: space-between;
+  &__left {
+    max-width: 470px;
+    font-size: 23px;
+    line-height: 38px;
+  }
+  &__right {
+    max-width: 470px;
+    font-size: 19px;
+    p {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.arrow-popular {
+  position: relative;
+  bottom: -35px;
+  left: -165px;
+}

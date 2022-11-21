@@ -1,0 +1,72 @@
+@media (min-width: 300px) and (max-width: 770px) {
+  .container {
+    max-width: 770px;
+    width: 100%;
+    margin: 0 auto;
+    .blog_content {
+      .second_image {
+        max-width: 340px;
+        height: 280px;
+        background-image: url(../img/mobile/arrow.png);
+      }
+    }
+    .reverce {
+      flex-direction: row-reverse;
+    }
+    .blog_content__box {
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: space-between;
+      .image {
+        width: 340px;
+        height: 280px;
+        background-image: url(../img/for-laptop/building.png);
+      }
+      .text {
+        max-width: 450px;
+        width: 100%;
+        padding: 85px 30px 85px 30px;
+        .sub_text:first-child {
+          margin-bottom: 30px;
+        }
+        .sup {
+          margin-top: 15px;
+          margin-bottom: 50px;
+        }
+        .arrow {
+          width: 25px;
+          margin: 15px 20px;
+          position: relative;
+          top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container .blog_content__box {
+    flex-wrap: wrap;
+  }
+
+  .slider {
+    &__item {
+      &__image {
+        width: 300px;
+        height: 210px;
+        background-image: url(../img/mobile/lamp.png);
+      }
+      .second_slide {
+        background-image: url(../img/mobile/arrow.png);
+      }
+      .third_slide {
+        background-image: url(../img/mobile/roof.png);
+      }
+    }
+  }
+}
